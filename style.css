@@ -1,0 +1,78 @@
+@font-face {
+  font-family: digit;
+  src: url(media/typo_digit.otf);
+}
+@font-face {
+  font-family: cheri;
+  src: url(media/cheri.TTF);
+}
+
+body {
+  background-image: url(media/hackerman.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 330px;
+}
+
+#title {
+  background-color: rgb(225, 199, 240);
+  text-align: center;
+  font-family: digit;
+  border-radius: 15px;
+}
+
+.card-btn button {
+  padding: 10px 15px;
+  margin: 0px 5px;
+  cursor: pointer;
+  font-family: cheri;
+  font-size: medium;
+  color: rgb(22, 20, 20);
+  border: 0;
+  border-radius: 5px;
+}
+
+button#plus {
+  background-color: rgb(71, 236, 236);
+}
+
+button#plus:hover {
+  background-color: rgb(28, 194, 194);
+}
+
+button#minus {
+  background-color: #fd0808;
+}
+
+button#minus:hover {
+  background-color: #be060c;
+}
+
+button#reset {
+  background-color: rgb(190, 181, 181);
+}
+
+button#reset:hover {
+  background-color: gray;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(media/hackerman_small.jpg);
+    background-size: cover;
+  }
+  .container {
+    margin-top: 400px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    background-image: url(media/hackerman_manless.jpg);
+  }
+}
